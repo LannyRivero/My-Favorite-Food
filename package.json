@@ -1,0 +1,13 @@
+{
+  "name": "my-favorite-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass scss/styles.scss:css/styles.css",
+    "watch-css": "sass --watch scss/styles.scss:css/styles.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
