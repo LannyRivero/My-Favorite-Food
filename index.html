@@ -1,14 +1,86 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favorite Food</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pancake Recipe</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>My Favorite Food</h1>
-    <p>¡Bienvenido a la receta de mi comida favorita!</p>
-    <script src="js/app.js"></script>
+  <div class="page">
+    <header>
+      <h1>Pancakes</h1>
+    </header>
+    <div class="page">
+      <!-- Image Section -->
+      <section class="image">
+        <img src="assets/img/pancakes.png" alt="Delicious Pancakes">
+      </section>
+
+      <!-- Ingredients and Time Section -->
+      <section class="info">
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li><input type="checkbox"> 1 1/2 Cups All Purpose Flour</li>
+            <li><input type="checkbox"> 3 1/2 Teaspoons Baking Powder</li>
+            <li><input type="checkbox"> 1 Teaspoon Salt</li>
+            <li><input type="checkbox"> 1 Tablespoon Sugar</li>
+            <li><input type="checkbox"> 1 1/4 Cups Milk</li>
+            <li><input type="checkbox"> 1 Egg</li>
+            <li><input type="checkbox"> 3 Tablespoons Butter (melted)</li>
+          </ul>
+        </div>
+        <div class="time">
+          <h2>Time</h2>
+          <p><i>⏱</i> 0:00</p>
+          <div class="time-buttons">
+            <button>5</button>
+            <button>10</button>
+            <button>15</button>
+            <button>20</button>
+          </div>
+          <button class="start">Start</button>
+        </div>
+      </section>
+
+      <!-- Preparation Section -->
+      <section class="preparation">
+        <h2>Preparation</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <p>In a large bowl, sift together the flour, baking powder, salt, and sugar.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <p>Make a well in the center and pour in the milk, egg, and melted butter. Mix until smooth.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <p>Heat a lightly oiled griddle or frying pan over medium-high heat. Pour the batter onto the griddle using approximately 1/4 cup for each pancake.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <p>Brown on both sides and serve hot with syrup, butter, or fruit.</p>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Created by Lanny</p>
+        <div class="social-icons">
+          <a href="#"><img src="assets/img/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="assets/img/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="assets/img/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="assets/img/x-twitter 1.png" alt="Twitter"></a>
+        </div>
+      </footer>
+  </div>
 </body>
 </html>

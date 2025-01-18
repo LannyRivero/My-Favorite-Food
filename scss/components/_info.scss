@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.info {
+    @include m.grid-center(2, 20px);
+    background-color: v.$secondary-color;
+    padding: 20px;
+
+    @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    }
+
+    .ingredients, .time {
+    background-color: v.$secondary-color;
+    padding: 15px;
+    border-radius: 8px;
+    @include m.box-shadow(v.$primary-color);
+
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    }
+}

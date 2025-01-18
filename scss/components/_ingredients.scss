@@ -1,0 +1,31 @@
+
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.ingredients {
+  background-color: v.$secondary-color; // Fondo claro
+  padding: 15px;
+  border-radius: 8px; // Bordes redondeados
+  @include m.box-shadow(v.$primary-color); // Sombra ligera para destacar la sección
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: v.$primary-color;
+  }
+
+  ul {
+    list-style: none; // Sin viñetas
+    padding: 0;
+
+    li {
+      font-size: 16px;
+      margin-bottom: 8px;
+
+      input {
+        margin-right: 10px; // Espacio entre el checkbox y el texto
+      }
+    }
+  }
+}

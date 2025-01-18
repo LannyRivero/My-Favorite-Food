@@ -1,0 +1,16 @@
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-center($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+@mixin box-shadow($color) {
+    box-shadow: 0 4px 6px rgba($color, 0.1);
+}

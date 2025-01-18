@@ -1,0 +1,55 @@
+
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.time {
+  padding: 15px;
+  background-color: v.$secondary-color; // Fondo claro
+  border-radius: 8px; // Bordes redondeados
+  @include m.box-shadow(v.$primary-color); // Sombra para separación visual
+  text-align: center;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: v.$primary-color;
+  }
+
+  .time-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; // Espaciado entre los botones
+
+    button {
+      margin: 5px;
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: v.$highlight-color;
+      color: white;
+      border: none;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: v.$highlight-color-light; // Color más claro al pasar el cursor
+      }
+    }
+  }
+
+  .start {
+    display: block;
+    margin: 10px auto 0;
+    background-color: v.$primary-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: v.$primary-color-light; // Color más claro al pasar el cursor
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.page {
+    display: grid;
+    grid-template-rows: auto auto auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+  
+    @media (max-width: 768px) {
+      padding: 10px;
+      grid-template-rows: auto auto auto auto auto auto;
+    }
+  }
+  

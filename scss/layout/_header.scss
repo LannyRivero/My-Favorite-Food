@@ -1,0 +1,13 @@
+
+header {
+    text-align: center;
+  
+    h1 {
+      font-size: 35px;
+      margin: 0;
+  
+      @media (max-width: 768px) {
+        font-size: 22px;
+      }
+    }
+  }

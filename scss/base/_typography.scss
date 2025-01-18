@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+
+body {
+    font-family: v.$font-family;
+    color: v.$primary-color;
+    background-color: v.$secondary-color;
+}
+
+h1, h2, h3 {
+    color: v.$primary-color;
+    font-weight: 700;
+}
+
+p {
+    color: v.$highlight-color;
+    line-height: 1.5;
+}
