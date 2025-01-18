@@ -62,7 +62,7 @@
    git clone https://github.com/LannyRivero/my-favorite-food.git   
  ---  
 ## 🌐 Live Demo
-Access the live version of the project here:
+Access the live version of the project here: https://lannyrivero.github.io/My-Favorite-Food/
  ---
 ## 👩‍💻 Author
 Lanny Rivero
