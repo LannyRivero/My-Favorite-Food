@@ -3,53 +3,57 @@
 @use '../abstracts/variables' as v;
 
 .time {
-  padding: 15px;
-  background-color: v.$secondary-color; // Fondo claro
-  border-radius: 8px; // Bordes redondeados
-  @include m.box-shadow(v.$primary-color); // Sombra para separación visual
   text-align: center;
+  background-color: v.$secondary-color;
+  padding: 20px;
+  border-radius: 8px;
+  @include m.box-shadow(v.$highlight-color);
 
   h2 {
     font-size: 20px;
-    margin-bottom: 10px;
     text-transform: uppercase;
-    color: v.$primary-color;
+    margin-bottom: 10px;
   }
 
-  .time-buttons {
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    color: v.$primary-color;
+    margin-bottom: 15px;
+  }
+
+  .time-controls {
     display: flex;
     justify-content: center;
-    gap: 10px; // Espaciado entre los botones
+    gap: 10px;
+    margin-bottom: 15px;
 
     button {
-      margin: 5px;
       padding: 8px 15px;
       font-size: 14px;
-      cursor: pointer;
       background-color: v.$highlight-color;
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
+      cursor: pointer;
 
       &:hover {
-        background-color: v.$highlight-color-light; // Color más claro al pasar el cursor
+        background-color: v.$highlight-color-light;
       }
     }
   }
 
-  .start {
-    display: block;
-    margin: 10px auto 0;
-    background-color: v.$primary-color;
+  .start-timer {
     padding: 10px 20px;
-    border-radius: 5px;
+    font-size: 16px;
+    background-color: v.$primary-color;
     color: white;
-    font-size: 14px;
-    text-align: center;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 
     &:hover {
-      background-color: v.$primary-color-light; // Color más claro al pasar el cursor
+      background-color: v.$primary-color-light
     }
   }
 }
